@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Invitation</title>
+  <style>
+    body {
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      height:100vh;
+      font-family:Arial;
+      background:#f5f5f5;
+    }
+
+    #envelope {
+      padding:30px;
+      border:2px solid #000;
+      border-radius:12px;
+      cursor:pointer;
+      background:white;
+      text-align:center;
+      transition:0.4s;
+    }
+
+    #invite {
+      display:none;
+      text-align:center;
+    }
+  </style>
+</head>
+
+<body>
+
+<div id="envelope" onclick="openInvite()">
+  📩 Click to Open
+</div>
+
+<div id="invite">
+  <h1>You’re Invited 🎉</h1>
+  <p id="names"></p>
+  <p>Save the Date</p>
+</div>
+
+<script>
+function openInvite() {
+  document.getElementById("envelope").style.display = "none";
+  document.getElementById("invite").style.display = "block";
+}
+</script>
+
+</body>
+</html>
